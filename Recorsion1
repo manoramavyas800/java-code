@@ -1,0 +1,88 @@
+//Write a recursion function to calculate the sum of digit of a number in java
+public class LittleNikita {
+    public static int sumOfDigit(int n) {
+        if(n==0){
+            return 0;
+        }
+        return (n%10)+sumOfDigit(n/10);
+    }
+    public static void main(String[] args) {
+        int n=64567;
+       System.out.println(sumOfDigit(n));
+        }
+    }
+
+
+
+//Write a recursion function to calculate the square of the digit of number!
+public class MinimalCoprime {
+    public static int sumOfSquares(int n) {
+        if(n == 0){
+            return 0;
+        }
+        int lastDigit = n%10;
+        return (lastDigit*lastDigit)+sumOfSquares(n/10);
+        }
+        public static void main(String[] args) {
+        int number= 1234;
+        System.out.println(sumOfSquares(number));
+        }
+    }
+
+
+//Write a program to convert a binary number to decimal number.
+import java.util.Scanner;
+public class Basic {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number: ");
+        String number = sc.nextLine();
+        sc.close();
+        int decimal = 0;
+        int power = 0;
+        for (int i = number.length() - 1; i >= 0; i--) {
+            char ch = number.charAt(i);
+            if (ch == '1') {
+                decimal += Math.pow(2, power);
+            }
+            power++;
+        }
+        System.out.println(decimal);
+    }
+}
+
+
+
+//Write a funcation to calculate sum of squares of n first natural number:
+public class SumProblem {
+    public static int sumOfSquares(int n) {
+        if(n == 0) return 0;
+        return (n*n)+sumOfSquares(n-1);
+    }
+    public static void main(String[] args) {
+       int number= 4;
+       System.out.println(sumOfSquares(number));
+    }
+}
+
+
+
+//write a program to find the maximum and minimum value of an array
+public class EasyProblem {
+    public static void main(String[] args) {
+        int[] arr = {55,88,78,96,67};
+       int max = arr[0];
+       int min = arr[0];
+       for (int i = 1; i < arr.length; i++) {
+           if (arr[i] > max) {
+               max = arr[i];
+           }
+           if (arr[i] < min) {
+               min = arr[i];
+           }
+       }
+       System.out.println(max);
+        System.out.println(min);
+
+       }
+    }
