@@ -17,3 +17,22 @@ public class PrimeNumber {
         }
     }
 }
+
+
+
+//find max num in array
+
+public class findMaxNum {
+    public static void main(String[] args) {
+        int [] arr = {2,4,5,6,7};
+        int ans=arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if(arr[i]>ans){
+                ans=arr[i];
+
+            }
+        }
+System.out.println(ans);
+
+    }
+       }
