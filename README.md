@@ -60,3 +60,25 @@ public class Java {
         }
         }
     }
+
+    //chack Number is palindrome or not
+
+    import java.util.Scanner;
+public class Palindrome {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        int revesse=0;
+        int temp=num;
+        while(temp!=0){
+            int rem=temp%10;
+            revesse=revesse*10+rem;
+            temp=temp/10;
+        }
+        if(revesse==num){
+            System.out.println("Palindrome Number");
+        }else{
+            System.out.println("Not a Palindrome Number");
+        }
+}
+}
