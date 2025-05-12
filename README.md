@@ -82,3 +82,22 @@ public class Palindrome {
         }
 }
 }
+
+//print Fectorial in java
+
+import java.util.Scanner;
+public class Fectorial {
+    public static int Fectorial(int n) {
+        int xFect = 1;
+        for (int i = 1; i <= n; i++) {
+            xFect *= i;
+        }
+        return xFect;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+            System.out.println(Fectorail(n));
+    }
+}
