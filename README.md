@@ -122,6 +122,29 @@ public class java {
         }
         for (int i = 2; i <= n; i++) {
             if(isPrime[i]) {
+
+            //print combination
+
+            import java.util.Scanner;
+public class Combination {
+    public static int Fact(int x) {
+        int xFact=1;
+        for (int i = 1; i <= x; i++) {
+            xFact *= i;
+        }
+        return xFact;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number of n:");
+        int n = sc.nextInt();
+        System.out.println("Enter the number of r:");
+        int r=sc.nextInt();
+        int cpr=Fact(n)/(Fact(r)*Fact(n-r));
+        System.out.println(cpr);
+    }
+}
                 System.out.println(i+" ");
             }
         }
