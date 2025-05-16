@@ -184,3 +184,26 @@ public class SumDigits {
         
        }
     }
+
+//print  String is palindrome or not
+import java.util.Scanner;
+public class Codeforces {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+      String s = sc.nextLine();
+      String reverse="";
+      String temp= s;
+      while(!temp.equals("")){
+          String rem=temp.substring(temp.length()-1);
+          reverse=reverse+rem;
+          temp=temp.substring(0,temp.length()-1);
+      }
+      if(reverse.equals(s)){
+          System.out.println("YES");
+      }else{
+          System.out.println("NO");
+      }
+
+    }
+        }
+
