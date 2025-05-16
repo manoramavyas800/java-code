@@ -37,7 +37,7 @@ System.out.println(ans);
     }
        }
 
-       //print these patterns
+ //print these patterns
        /*
        1 
        1 2 
@@ -61,7 +61,7 @@ public class Java {
         }
     }
 
-    //chack Number is palindrome or not
+ //chack Number is palindrome or not
 
     import java.util.Scanner;
 public class Palindrome {
@@ -122,8 +122,7 @@ public class java {
         }
         for (int i = 2; i <= n; i++) {
             if(isPrime[i]) {
-
-            //print combination
+ //print combination
 
             import java.util.Scanner;
 public class Combination {
@@ -166,4 +165,22 @@ public class CountDigite {
         System.out.println(count);
        }
 
+    }
+
+ //Sum digites
+
+    //import java.util.Scanner;
+public class SumDigits {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+       int n = sc.nextInt();
+        int sum=0;
+        while(n!=0){
+            int temp=n%10;
+            sum+=temp;
+            n=n/10;
+        }
+        System.out.println(sum);
+        
+       }
     }
